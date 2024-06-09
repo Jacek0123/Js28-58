@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jacek Banaszczyk</title>
+    <style>
+        .text {
+            font-size: 41px; /* Ustawiona wielkość liter */
+        }
+        .nazwisko {
+            color: blue;
+        }
+        .imie {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var imie = "Jacek";
+        var nazwisko = "Banaszczyk";
+        var iloscWyswietlen = 12; 
+
+      
+        var userInput = prompt("Podaj liczbę:");
+        var number = parseInt(userInput);
+
+        
+        if (!isNaN(number)) {
+            var textToDisplay = (number % 2 === 0) ? nazwisko : imie;
+            var className = (number % 2 === 0) ? 'nazwisko' : 'imie';
+
+            for (var i = 1; i <= iloscWyswietlen; i++) {
+                document.write('<div class="text ' + className + '">' + textToDisplay + '</div>');
+            }
+        } else {
+            alert("Podana wartość nie jest liczbą!");
+        }
+    </script>
+</body>
+</html>

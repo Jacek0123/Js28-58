@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var a_ban = parseInt(prompt("Podaj wysokość prostokąta (a):"));
+        var b_ban = parseInt(prompt("Podaj szerokość prostokąta (b):"));
+
+       
+
+    
+        for (var i = 0; i < b_ban; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        
+        var wiersz_ban = "*";
+        for (var i = 1; i <= (b_ban - 2); i++) {
+            wiersz_ban += "&nbsp&nbsp";
+        }
+        wiersz_ban += "*";
+
+        
+        for (var j = 0; j < a_ban - 2; j++) {
+            document.write(wiersz_ban + "<br>");
+        }
+
+        
+        for (var i = 0; i < b_ban; i++) {
+            document.write("*");
+        }
+    </script>
+</body>
+</html>

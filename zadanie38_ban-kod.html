@@ -1,0 +1,54 @@
+﻿<html>
+  <head>
+    <META charset="UTF-8"> 
+  </head>
+  <body>
+      <textarea id="textarea" name="textarea" rows="55" cols="90">
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    function sprawdzParzystosc(liczba) {
+      if (liczba % 2 === 0) {
+        // Liczba jest parzysta
+        pokaz.innerHTML = "<font color='red' size='3'>Liczba jest parzysta</font>";
+      } else {
+        // Liczba jest nieparzysta
+        pokaz.innerHTML = "<font color='blue' size='5'>Liczba jest nieparzysta</font>";
+      }
+    }
+
+    function okno_zamknij() {
+      window.close();
+    }
+
+  </script>
+</head>
+<body>
+  <div>
+    <script type="text/javascript">
+      document.write("<font color='green' size='6'>Menu</font>" + "<br>");
+      document.write("<font color='red' size='6'>1-parzysta</font>" + "<br>");
+      document.write("<font color='blue' size='6'>2-nieparzysta</font>" + "<br>");
+
+      function obl(x) {
+        sprawdzParzystosc(parseInt(x));
+      }
+    </script>
+    <form name="formularz" action="..." onsubmit="obl(this.kolor.value);return false">
+      <input size="6" name="kolor">
+      <input type="submit" value="oblicz">
+    </form>
+    <table>
+      <tr id="pokaz"> </tr>
+    </table>
+  </div>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+</body>
+</html>
+
+<!--Jacek Banaszczyk 3F-->
+</textarea>
+  </body>
+</html>

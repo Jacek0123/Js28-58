@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        pre {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+     
+        var a_ban = (10 % 4) + 5; 
+        var b_ban = (5 % 6) + 20; 
+
+       
+        var result = '';
+
+       
+        for (var i = 0; i < b_ban; i++) {
+            result += '*';
+        }
+        result += '\n';
+
+        
+        for (var i = 0; i < a_ban - 2; i++) {
+            result += '*';
+            for (var j = 0; j < b_ban - 2; j++) {
+                result += ' ';
+            }
+            result += '*\n';
+        }
+
+        
+        for (var i = 0; i < b_ban; i++) {
+            result += '*';
+        }
+        result += '\n';
+
+       
+        document.write('<pre>' + result + '</pre>');
+    </script>
+</body>
+</html>

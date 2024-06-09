@@ -1,0 +1,41 @@
+﻿<html>
+	<head>
+
+	</head>
+	<body>
+		
+		<textarea cols="85" rows="35">
+
+<html>
+<head>
+    <script type="text/javascript">
+
+        function ciezarowka(nazwisko_k, imie_k, zawod_k) {
+            this.nazwisko = nazwisko_k;
+            this.imie = imie_k;
+            this.zawod = zawod_k;
+        }
+
+        ciezarowka.prototype.wypisz_banaszczyk = function () {
+            alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+        };
+
+        var osoba1 = new ciezarowka("Nowak", "Krzysztof", "mechanik");
+        var osoba2 = new ciezarowka('Kowalski', 'Alan', 'programista');
+
+        osoba1.wypisz_banaszczyk();
+        osoba2.wypisz_banaszczyk();
+
+        document.write("Dostęp do właściwości" + "<br>");
+        document.write("Klient pierwszy" + " " + osoba1.nazwisko + " " + osoba1.imie + " " + osoba1.zawod + "<br>");
+        document.write("Klient drugi" + " " + osoba2.nazwisko + " " + osoba2.imie + " " + osoba2.zawod);
+    </script>
+</head>
+<body>
+<br>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"> 
+</body>
+</html>
+		</textarea>
+	</body>
+</html>

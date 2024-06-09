@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Liczby Parzyste</title>
+    <script type="text/javascript">
+       function isEven(number) {
+    return number % 2 === 0;
+}
+
+var userInput = prompt("Podaj liczbę:");
+var limit = parseInt(userInput);
+
+if (isNaN(limit)) {
+    alert("Podana wartość nie jest liczbą!");
+} else {
+
+    var evenNumbers = [];
+    for (var i = 2; i <= limit; i++) {
+        if (isEven(i)) {
+            evenNumbers.push(i);
+        }
+    }
+    
+
+    if (evenNumbers.length > 0) {
+        alert("Liczby parzyste od 2 do " + limit + " to: " + evenNumbers.join(", "));
+    } else {
+        alert("Brak liczb parzystych w podanym przedziale.");
+    }
+}
+    </script>
+</head>
+<body>
+</body>
+</html>

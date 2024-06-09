@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var n_ban = parseInt(prompt("Podaj liczbę n:"));
+
+       
+        var silnia_ban = 1;
+        if (n_ban > 0) {
+            for (var i = 1; i <= n_ban; i++) {
+                silnia_ban *= i;
+            }
+        }
+        document.write("n = " + n_ban + "<br>");
+        document.write(n_ban + "! = " + silnia_ban);
+    </script>
+</body>
+</html>

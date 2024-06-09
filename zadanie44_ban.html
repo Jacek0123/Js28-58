@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Jacek Banaszczyk</title>
+    <style>
+        .text {
+            font-size: 41px; 
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var imie = "Jacek";
+        var nazwisko = "Banaszczyk";
+        var iloscWyswietlen = 12;
+
+        for (var i = 1; i <= iloscWyswietlen; i++) {
+            if (i % 2 === 0) {
+                document.write('<div class="text">' + imie + '</div>');
+            } else {
+                document.write('<div class="text">' + nazwisko + '</div>');
+            }
+        }
+    </script>
+</body>
+</html>
